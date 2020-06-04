@@ -19,16 +19,41 @@
   "type": "test",
   "taskId": "test-1426895341",
   "source": {
-   "showName": true,
-   "answers": [],
-   "tokens": {
-    "blank": [],
-    "text": []
-   },
    "name": "SQL MIN()",
-   "instructions": "A `sql-6-1.sql` file has been opened for you.\n\nWrite each of the following tasks as a SQL statement in a new line: \n\n1. Select the product with the least stock from the `e_store.products` table. The output should look like this:\n```\n+------------+\n| MIN(stock) |\n+------------+\n|          1 |\n+------------+\n1 row in set (0.03 sec)\n```\n2. Select the product with the least stock from the `e_store.products` table aliasing the column name as: `min_stock`. The output should look like this:\n```\n+-----------+\n| min_stock |\n+-----------+\n|         1 |\n+-----------+\n1 row in set (0.01 sec)\n```\n3. Select the product with the least stock from the `e_store.products` table where the `id` is greater than 3. Alias the column name as: `min_stock`. The output should look like this:\n```\n+-----------+\n| min_stock |\n+-----------+\n|         4 |\n+-----------+\n1 row in set (0.02 sec)\n```\n\n---\nOnce you have completed these tasks press the _Check It!_ button to have your solution assessed.",
+   "showName": true,
+   "instructions": "A `sql-6-1.sql` file has been opened for you.\n\nWrite each of the following tasks as a SQL statement in a new line: \n\n1. Select the product with the least stock from the `e_store.products` table.  Be sure to use MIN and not Min and not min, etc. The autograder expects MIN. The output should look like this:\n```\n+------------+\n| MIN(stock) |\n+------------+\n|          1 |\n+------------+\n1 row in set (0.03 sec)\n```\n2. Select the product with the least stock from the `e_store.products` table aliasing the column name as: `min_stock`. The output should look like this:\n```\n+-----------+\n| min_stock |\n+-----------+\n|         1 |\n+-----------+\n1 row in set (0.01 sec)\n```\n3. Select the product with the least stock from the `e_store.products` table where the `id` is greater than 3. Alias the column name as: `min_stock`. The output should look like this:\n```\n+-----------+\n| min_stock |\n+-----------+\n|         4 |\n+-----------+\n1 row in set (0.02 sec)\n```\n\n---\nOnce you have completed these tasks press the _Check It!_ button to have your solution assessed.",
    "command": "node --no-warnings .guides/sqltests/sql-6-1.js",
-   "points": 1
+   "arePartialPointsAllowed": false,
+   "timeoutSeconds": 40,
+   "guidance": "",
+   "showGuidanceAfterResponse": false,
+   "points": 1,
+   "oneTimeTest": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     }
+    ],
+    "files": [
+     "sql-6-1.sql"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "sql-6-1.sql"
+     },
+     {
+      "type": "terminal",
+      "panelNumber": 0,
+      "content": "mysql"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "",
+   "learningObjectives": ""
   }
  },
  {
