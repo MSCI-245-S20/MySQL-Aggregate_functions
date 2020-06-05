@@ -92,16 +92,41 @@
   "type": "test",
   "taskId": "test-2188673486",
   "source": {
-   "showName": true,
-   "answers": [],
-   "tokens": {
-    "blank": [],
-    "text": []
-   },
    "name": "SQL Group By",
-   "instructions": "A `sql-6-9.sql` file has been opened for you.\n\nWrite each of the following tasks as a SQL statement in a new line (remember that you can `source` the file to compare the output reference): \n\n1. Use the `e_store` database\n2. Join the `products` and the `reviews` tables that would output this:\n```\n----+------------+-----------+\n| id | name       | avg_stars |\n+----+------------+-----------+\n|  2 | Smartphone |    2.3333 |\n|  3 | PC         |    3.0000 |\n+----+------------+-----------+\n2 rows in set (0.01 sec)\n```\n\n---\nOnce you have completed these tasks press the _Check It!_ button to have your solution assessed.",
+   "showName": true,
+   "instructions": "A `sql-6-9.sql` file has been opened for you.\n\nWrite each of the following tasks as a SQL statement in a new line (remember that you can `source` the file to compare the output reference): \n\n1. Use the `e_store` database\n2. Join the `products` and the `reviews` tables and output the product id, product name, average stars of its reviews, for products with <= 3 average stars.  Your output should look like this:\n```\n----+------------+-----------+\n| id | name       | avg_stars |\n+----+------------+-----------+\n|  2 | Smartphone |    2.3333 |\n|  3 | PC         |    3.0000 |\n+----+------------+-----------+\n2 rows in set (0.01 sec)\n```\n\n---\nOnce you have completed these tasks press the _Check It!_ button to have your solution assessed.",
    "command": "node --no-warnings .guides/sqltests/sql-6-9.js",
-   "points": 1
+   "arePartialPointsAllowed": false,
+   "timeoutSeconds": 40,
+   "guidance": "",
+   "showGuidanceAfterResponse": false,
+   "points": 1,
+   "oneTimeTest": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     }
+    ],
+    "files": [
+     "sql-6-9.sql"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "sql-6-9.sql"
+     },
+     {
+      "type": "terminal",
+      "panelNumber": null,
+      "content": ""
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "",
+   "learningObjectives": ""
   }
  },
  {
