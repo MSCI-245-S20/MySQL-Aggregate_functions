@@ -172,16 +172,41 @@
   "type": "test",
   "taskId": "test-3390707296",
   "source": {
-   "showName": true,
-   "answers": [],
-   "tokens": {
-    "blank": [],
-    "text": []
-   },
    "name": "Group By - Having",
-   "instructions": "A `sql-6-12.sql` file has been opened for you.\n\nWrite each of the following tasks as a SQL statement in a new line (remember that you can `source` the file to compare the output reference): \n\n1. Use the `e_store` database\n2. Join the `products` and the `reviews` in a `SELECT` query that would output this:\n```\n+------------+--------+-------+-----------+\n| name       | price  | stock | avg_stars |\n+------------+--------+-------+-----------+\n| Tablet     | 145.50 |     8 |    4.0000 |\n| Headphones |  20.00 |     6 |    3.5000 |\n| Monitor    | 125.45 |     7 |    5.0000 |\n+------------+--------+-------+-----------+\n3 rows in set (0.01 sec)\n```\n---\nOnce you have completed these tasks press the _Check It!_ button to have your solution assessed.",
+   "showName": true,
+   "instructions": "A `sql-6-12.sql` file has been opened for you.\n\nWrite each of the following tasks as a SQL statement in a new line (remember that you can `source` the file to compare the output reference): \n\n1. Use the `e_store` database\n2. Join the `products` and the `reviews` in a `SELECT` query to return the name, price, stock, and average review stars for products with more than 1 in stock and an average review of greater than or equal to 3 stars.  Your output should look like:\n```\n+------------+--------+-------+-----------+\n| name       | price  | stock | avg_stars |\n+------------+--------+-------+-----------+\n| Tablet     | 145.50 |     8 |    4.0000 |\n| Headphones |  20.00 |     6 |    3.5000 |\n| Monitor    | 125.45 |     7 |    5.0000 |\n+------------+--------+-------+-----------+\n3 rows in set (0.01 sec)\n```\n---\nOnce you have completed these tasks press the _Check It!_ button to have your solution assessed.",
    "command": "node --no-warnings .guides/sqltests/sql-6-12.js",
-   "points": 1
+   "arePartialPointsAllowed": false,
+   "timeoutSeconds": 40,
+   "guidance": "",
+   "showGuidanceAfterResponse": false,
+   "points": 1,
+   "oneTimeTest": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     }
+    ],
+    "files": [
+     "sql-6-12.sql"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": null,
+      "content": "sql-6-12.sql"
+     },
+     {
+      "type": "terminal",
+      "panelNumber": null,
+      "content": ""
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "",
+   "learningObjectives": ""
   }
  },
  {
